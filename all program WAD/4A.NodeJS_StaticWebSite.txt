@@ -1,0 +1,57 @@
+4A.Create a Node.JS Application which serves a static website. 
+
+
+Node.js is an asynchronous event-driven JavaScript runtime built on Chrome’s V8 JavaScript engine. With Node, you can build all types of applications from desktop to web. Let’s build a Static Website with Node JS Webserver
+
+Softwares used
+Node.js
+NPM
+Express
+VS Code
+Node comes with NPM, which is package manager for JavaScript. NPM allows the discovery and usage of common packages functionality.
+
+As mentioned above, for demonstration purpose we will use the Express framework. Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
+Download Node.js installable setup from its official site and install with default options. After installation, you will be able to run node and npm on the command line.
+
+
+Steps:
+create folder
+1- npm init
+2-npm install express
+ 
+app.js
+
+const express = require('express');
+const app = express()
+
+app.get('/', function (req, res) {
+    res.sendFile(__dirname + "/index.html")
+});
+app.listen(9000, function () {
+    console.log("server creeated om port 9000");
+})
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <h1>This is static page</h1>
+
+</body>
+
+</html>
+
+
+Starting the Node JS Webserver:
+Starting the server is as simple as running below command.
+node server.js
+That’s it, your server is up and running on port 8081.

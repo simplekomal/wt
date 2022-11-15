@@ -1,0 +1,37 @@
+
+npm --version
+npm install -g @angular/cli
+ng new  angular
+cd angular
+code .
+
+
+.html
+
+<input type="email" #email placeholder="Enter email">
+
+<input type="password" #pass placeholder="Password">
+
+<button type="submit" (click)="clickme(email.value,pass.value)">Submit</button><br>
+
+<label>Email address : {{ demail }}</label><br>
+<label>Password: {{ dpass }}</label>
+
+.ts
+
+import { Component } from '@angular/core';
+@Component({
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.css']
+})
+export class AppComponent {
+  demail = "";
+  dpass = "";
+  clickme(email: string, pass: string) {
+    this.demail = email;
+    this.dpass = pass;
+  }
+}
+
+ng serve

@@ -1,0 +1,58 @@
+Problem Statement: Create version control account on Github and using Git commands to create repository and push your code to Github.
+
+Git is a version control system that lets you manage and keep track of your source code history. GitHub is a cloud-based hosting service that lets you manage Git repositories.
+manage our projects with repositories and it allows us to see full time history of a every commit
+coding in collaboration.roll back to previous commit.
+
+
+** Links:
+Visual Studio Code Download Link : https://bit.ly/3yJZNJd
+Git Download Link : https://bit.ly/3wFy5uI
+Github Account Creation Link : https://bit.ly/3wFTLqm
+
+** Commands To Execute In Visual Studio Code Terminal:
+ - For Pushing First File:
+mkdir new folder name
+cd new folder name
+  1. git --version
+(create repositry on github on githum.com @top_right corner)
+crete file1.txt file
+
+  2. git init
+
+  3. git add .
+
+  4. git status
+->Changes to be committed:
+
+  5. git remote add origin "link of your github repository"
+
+  6. git commit -m "any message"
+->1 file changed, 2 insertion
+
+ 7. If Prompted to authenticate the user, execute following commands:
+   7.1 git config --global user.email "your git hub email id"
+     7.2 git config --global user.name "Your git hub user name"
+
+ 8. git push -u origin master
+->* [new branch]      master -> master
+Branch master set up to track remo
+
+    9. git status
+->On branch master nothing to commit, working directory clean
+   
+Now, check your github repository (refresh the page) whether the file is pushed or not.
+
+ - For Pushing Second File:
+  1. git add .
+  2. git status
+  3. git commit -m "any message"
+  4. git push -u origin master
+    5. git status
+    Now, check your github repository (refresh the page)  whether the file is pushed or not.
+
+** Some Basic Questions That Can Be Asked:
+ 1. What is Github?
+ 2. What is use of Github?
+ 3. What is use of git init, git status, git add ., git commit, git push commands? 
+ 4. Explain the steps to push your code to Github from Visual Studio Code terminal?.

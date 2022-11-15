@@ -1,0 +1,60 @@
+Assignment 2: 
+Write a JavaScript Program to get the user registration data and push to array/local storage with AJAX 
+POST method and data list in new page. 
+
+
+First Program:Storing data in Local Storage:
+User Login Data in Local Storage
+
+index.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="username" placeholder="username"><br><br>
+     <input type="email" id="email" placeholder="abc@mail.com"> <br><br>
+     <input type="password" id="pwd" placeholder="password"><br><br>
+    <input type="submit" onclick="test()">
+    <script src="localstorage.js" ></script>
+</body>
+</html>
+
+
+localstorage.js
+
+function test(){
+   // retriving data
+  var uid=document.getElementById("username").value;
+    var pw=document.getElementById("pwd").value;
+    var email=document.getElementById("email").value;
+//storing data
+var user=localStorage.setItem("user_id",uid);
+var pass=localStorage.setItem("pwd",pw);
+var em=localStorage.setItem("email_id",email);
+
+//retriving data from localStorage and using it for authorization.
+var user=localStorage.getItem("user_id",uid);
+var pass=localStorage.getItem("pwd",pw);
+var em=localStorage.getItem("email_id",email);
+
+var a,b,c;
+a="komal";
+b="komal@gmail.com";
+c=123;
+if(a==user && b==em && c==pass)
+{
+    alert("login successful")
+}
+else
+{
+alert("invalid details");
+}
+}
+
+

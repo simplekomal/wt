@@ -1,0 +1,59 @@
+5A.Create a simple Mobile Website using jQuery Mobile.  
+create a folder JQueryMobileDemo in VSCode editor and create two files index.html and login_register.html
+and execute index.html in browser and click on login/register link for other file.
+
+index.html:
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practical</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+
+<body>
+    <div data-role="page" id="home">
+        <div data-role="header" class="ui-responsive" data-theme="b">
+            <h2>JQuery Assignment no: 5A</h2>
+            <h4>Create a simple Mobile Website using jQuery Mobile</h4>
+        </div>
+        <div data-role="content">
+                 <ul data-role="listview" data-filter="true" data-filter-reveal="true"
+                data-filter-placeholder="Search Flowers...">
+                <li><a href="#">Rose</a></li>
+                <li><a href="#">Lotus</a></li>
+                <li><a href="#">Jasmine</a></li>
+                <li><a href="#">Sunflower</a></li>
+                <li><a href="#">Daisy</a></li>
+                <li><a href="#">Tulip</a></li>
+                <li><a href="#">Magnolia</a></li>
+                <li><a href="#">Lavender</a></li>
+                <li><a href="#">Balsam</a></li>
+                <li><a href="#">Butterfly Pea</a></li>
+                <li><a href="#">Flax</a></li>
+                <li><a href="#">Crossandra</a></li>
+                <li><a href="#">Golden Shower</a></li>
+                <li><a href="#">Forest Ghost</a></li>
+                <li><a href="#">Yellow Marigold</a></li>
+                <li><a href="#">Pot Marigold</a></li>
+                <li><a href="#">Star Jasmine</a></li>
+                <li><a href="#">Night Blooming Jasmine</a></li>
+                <li><a href="#">Crape Jasmine</a></li>
+                <li><a href="#">Hibiscus</a></li>
+                <li><a href="#">Daisy</a></li>
+                <li><a href="#">Black Turmeric</a></li>
+            </ul>
+        </div>
+        <div data-role="footer" style="text-align: center" data-theme="b">
+            <p>AIML</p>
+        </div>
+    </div>
+</body>
+
+</html>
